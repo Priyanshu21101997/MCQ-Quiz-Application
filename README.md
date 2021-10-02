@@ -8,7 +8,7 @@ User can access the quiz and complete the quiz while admin can insert, update, d
 
 Application Link - http://quizapplication-env.eba-bu2npx3b.us-east-2.elasticbeanstalk.com/
 
-<h4>INSTRUCTIONS</h4>
+<h3>INSTRUCTIONS</h3>
 
 <h2>To access user mode </h2>
 username - user<br>  
