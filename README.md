@@ -10,10 +10,10 @@ Application Link - http://quizapplication-env.eba-bu2npx3b.us-east-2.elasticbean
 
 <h4>INSTRUCTIONS</h4>
 
-<h2>To access user mode -></h2>
-username -> user  
-password -> user  
+<h2>To access user mode </h2>
+username - user<br>  
+password - user<br>  
 
-<h2>To access admin mode -></h2>
-username -> admin  
-password -> admin  
+<h2>To access admin mode </h2>
+username - admin<br> 
+password - admin<br> 
