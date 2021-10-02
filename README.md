@@ -11,9 +11,9 @@ Application Link - http://quizapplication-env.eba-bu2npx3b.us-east-2.elasticbean
 INSTRUCTIONS
 
 To access user mode ->
-username -> user
+username -> user /n
 password -> user
 
 To access admin mode ->
-username -> admin
+username -> admin /n
 password -> admin
