@@ -5,3 +5,5 @@ Backend is made in Java using springboot and also spring security is added to th
 Questions are being fetched from MySQL database.
 
 User can access the quiz and complete the quiz while admin can insert, update, delete new questions for the quiz.
+
+Application Link - http://quizapplication-env.eba-bu2npx3b.us-east-2.elasticbeanstalk.com/
