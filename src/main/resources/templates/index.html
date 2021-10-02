@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+	<script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div align = "center" >	
+	<div class="col-sm-12" align="right">
+            <a href="/logout">Logout</a>
+            </div>
+	<h2>Questions Database</h2>
+</div>
+		<div align = "center" >		   
+		     <h3><a  th:href="@{'/new'}">Add new</a></h3>     
+	    </div>
+	
+	
+	<div class="col-sm-5" align = "center">
+                 <div class="panel-body" align = "center" >
+                 <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      		<th>Question ID</th>
+            <th>Question</th>
+            <th>Option 1</th>
+            <th>Option 2</th>
+            <th>Option 3</th>
+            <th>Option 4</th>
+            <th>Correct Option</th>
+            <th>Edit</th>
+            <th>Delete</th>
+   	</tr>
+  </thead>
+  <tbody>
+      <tr  th:each="quesdata : ${listquesdata }">
+		<td th:text="${quesdata.id}">Question ID</td>
+		<td th:text="${quesdata.question}">Question</td>
+		<td th:text="${quesdata.option1}">Option 1</td>
+		<td th:text="${quesdata.option2}">Option 2</td>
+		<td th:text="${quesdata.option3}">Option 3</td>
+		<td th:text="${quesdata.option4}">Option 4</td>
+		<td th:text="${quesdata.correctoption}">Correct Option</td>				
+		<td>
+			<a th:href="@{'/edit/' + ${quesdata.id}}">Edit</a>
+		</td>							    
+		<td>
+			<a th:href="@{'/delete/' + ${quesdata.id}}">Delete</a>
+		</td>		    
+		</tr> 
+   
+  </tbody>
+</table>
+                    
+                 </div>
+
+            </div> 
+
+
+
+</body>
+</html>

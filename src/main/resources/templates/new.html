@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Create New Question</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div align="center">
+    <h1>Create New Question</h1>
+    <br />
+     <div class="col-sm-4">
+    <form action="#" th:action="@{/save}" th:object="${quesdata}" method="post">
+
+      
+ 		<div alight="left">
+            <tr>
+                <label class="form-label" >Question</label>
+                <td>
+	                <input type="hidden" th:field="*{id}" />
+	                <input type="text" th:field="*{question}" class="form-control" placeholder="Question" />
+                </td>
+            </tr>
+         </div>   
+            
+          	<div alight="left">
+          
+            <tr>
+                 <label class="form-label" >Option 1</label>
+                <td><input type="text" th:field="*{option1}" class="form-control" placeholder="Option 1" /></td>
+            </tr>
+            <tr>
+                 <label class="form-label" >Option 2</label>
+                <td><input type="text" th:field="*{option2}" class="form-control" placeholder="Option 2" /></td>
+            </tr>
+            <tr>
+                 <label class="form-label" >Option 3</label>
+                <td><input type="text" th:field="*{option3}" class="form-control" placeholder="Option 3" /></td>
+            </tr>
+            <tr>
+                 <label class="form-label" >Option 4</label>
+                <td><input type="text" th:field="*{option4}" class="form-control" placeholder="Option 4" /></td>
+            </tr>
+            </div> 
+            <div alight="left">
+                 <tr>
+                 <label class="form-label" >Correct Option</label>
+                <td><input type="text" th:field="*{correctoption}" class="form-control" placeholder="Correct Option" /></td>
+            </tr>
+            </div> 
+			<br>
+            <tr>
+            <td colspan="2"><button type="submit" class="btn btn-info">Save</button> </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
